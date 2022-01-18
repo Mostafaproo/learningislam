@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title منصة تاء
+        include ./public/styles/styles.pug
+    body 
+        
+
+        include ./public/header/main-nav.pug
+    
+        include ./public/header/sidebar.pug
+        .view-wrapper#view-wrapper
+            .page-content-wrapper 
+                .page-content 
+
+                    //*** start Page Welcom
+                    .page-title 
+                        .icon-wrapper#icon-toggle
+                            span.icone-line.one
+                            span.icone-line.two
+                            span.icone-line.three
+                            //- i.fa.fa-bars.fa-lg#icon-toggle
+                        .second-logo
+                            img(src="./images/typo-dark.svg", draggable='false' alt="type")
+                    .page-message 
+                        p.btn-delete(onclick="$(this).parent().hide();") 
+                            i.fa.fa-times
+
+                        .message 
+                            h5 لم تقم بتسجيل الدخول
+                            p سجل الآن في منصة تاء لمتابعة تقدمك وجمع النقاط والدخول في المنافسات، بعد التسجيل ستحصل على شهادة الكترونية بالموضوعات التي تتعلمها 
+                            
+                        .field-btn 
+                            .control 
+                                a(href="#")
+                                    span.fa.fa-sign-in.icon 
+                                    span الدخول
+                            .control 
+                                a(href="#")
+                                    span.fa.fa-registered.icon 
+                                    span التسجيل
+
+                    //*** start Body Of content Page
+                    include ./components/lessons/main-topics.pug
+            
+
+
+
+        include ./public/scripts/scripts.pug
+

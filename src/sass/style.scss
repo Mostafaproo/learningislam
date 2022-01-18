@@ -1,0 +1,12 @@
+@import './vars/colors';
+@import './public/global.scss';
+
+@import './public/main-nav.scss';
+@import './public/body-wrapper.scss';
+@import './header/sidebar.scss';
+
+
+// Import Pages Here
+@import './pages/indexCom/content-page.scss';
+@import './pages/lessons/content-page.scss';
+@import './pages/exam/exam-page.scss';

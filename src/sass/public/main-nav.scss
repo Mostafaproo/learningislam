@@ -1,0 +1,97 @@
+.main-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background-color: $main-nav-color;
+    z-index: 999;
+}
+
+.main-brand {
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    margin-top: 10px;
+
+    img {
+        width: 36px;
+        height: auto;
+        display: inline-block;
+    }
+}
+
+
+.links-page {
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        text-align: center;
+        font-size: .65rem;
+        transition: $transition;
+        border: 3px solid transparent;
+        position: relative;
+        overflow: hidden;
+        a {
+            margin-bottom: 15px;
+            display: inline-block;
+            color: #a2a5b9;;
+            i {
+                color: #dcdcdc;
+                transition: $transition;
+                margin: 5px 0;
+                font-size: 1rem;
+            }
+        }
+
+        &:hover i {
+            color: #797BF2;
+        }
+
+        &:hover {
+            border-right: 3px solid #797BF2;
+            padding-right: 5px;
+        }
+
+        span {
+            position: absolute;
+            right: 45px;
+            bottom: 20px;
+            display: block;
+            background-color: #797bf2;
+            white-space: nowrap;
+            max-width: 250px;
+            padding: 5px 15px;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            // z-index: 10;
+            transition: $transition;
+            // cursor: none;
+            &::after {
+                content: "";
+                position: absolute;
+                border-width: 7px;
+                top: 5px;
+                right: -14px;
+                border-style: solid;
+                border-color: transparent transparent transparent #797BF2;
+                
+            }
+
+        }
+        &:hover span{
+            visibility: visible;
+            opacity: 1;
+            right: 70px;
+            overflow: visible;
+        }
+        &:hover{
+            overflow: visible;
+        }
+    }
+
+}

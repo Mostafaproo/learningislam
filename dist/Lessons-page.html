@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تاء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--** Faveicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/faveicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/faveicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/faveicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body> 
+    <div class="main-nav"> 
+      <div class="nav-content"> 
+        <div class="main-brand"> <a href="./index.html"><img src="./images/logo-dark.svg" alt="logo" draggable="false"></a></div>
+        <div class="links-page"> 
+          <ul> 
+            <li><a href="./index.html"> <i class="fa fa-home fa-lg d-block text-center"> </i>الرئيسيه </a><span>تعلم</span></li>
+            <li> <a href="./Lessons-page.html"> <i class="fa fa-book fa-lg d-block text-center"> </i>الدروس </a><span>المواضيع الرئيسيه </span></li>
+            <li> <a href="./exam-page.html"> <i class="fa fa-cube fa-lg d-block text-center"> </i>الاختبارات </a><span>الاختبارات  </span></li>
+            <li> <a href="#"> <i class="fa fa-users fa-lg d-block text-center"> </i>المجموعات </a><span> المجموعات </span></li>
+            <li> <a href="#"> <i class="fa fa-bell fa-lg d-block text-center"> </i>تحدى الوقت </a><span> تحدى الوقت </span></li>
+            <li> <a href="#"> <i class="fa fa-thumbs-up fa-lg d-block text-center"> </i>لوحة التمييز </a><span> لوحه مميزه </span></li>
+            <li> <a href="#"> <i class="fa fa-question-circle fa-lg d-block text-center"> </i>  الدعم الفنى</a><span> اسأل الدعم</span></li>
+            <li> <a href="#"> <i class="fa fa-sign-in fa-lg d-block text-center"> </i>الدخول </a><span> دخول الموقع </span></li>
+            <li> <a href="#"> <i class="fa fa-user fa-lg d-block text-center"> </i>التسجيل </a><span> تسجيل الدخول </span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-panal" id="side-bar"> 
+      <div class="sidebar-header">
+        <p>الدروس</p>
+      </div>
+      <div class="category-sidebar"> 
+        <ul class="menu"> 
+          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العقيده</a>
+            <div class="sub-menu">
+              <ul>
+                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> link menu</a></li>
+                <li class="link-sub-menu"><i class="fa fa-home"></i><a class="sub-link-nav" href="#"> link menu</a></li>
+                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> link menu</a></li>
+                <li class="link-sub-menu"><i class="fa fa-home"> </i><a class="sub-link-nav" href="#"> link menu</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العقيده</a>
+            <div class="sub-menu">
+              <ul>
+                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> link menu</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العقيده</a>
+            <div class="sub-menu">
+              <ul>
+                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> link menu</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="view-wrapper" id="view-wrapper">
+      <div class="page-content-wrapper"> 
+        <div class="page-content"> 
+          <!--*** start Page Welcom-->
+          <div class="page-title"> 
+            <div class="icon-wrapper" id="icon-toggle"><span class="icone-line one"></span><span class="icone-line two"></span><span class="icone-line three"></span></div>
+            <div class="second-logo"><img src="./images/typo-dark.svg" draggable="false" alt="type"></div>
+          </div>
+          <div class="page-message"> 
+            <p class="btn-delete" onclick="$(this).parent().hide();"> <i class="fa fa-times"></i></p>
+            <div class="message"> 
+              <h5>لم تقم بتسجيل الدخول</h5>
+              <p>سجل الآن في منصة تاء لمتابعة تقدمك وجمع النقاط والدخول في المنافسات، بعد التسجيل ستحصل على شهادة الكترونية بالموضوعات التي تتعلمها </p>
+            </div>
+            <div class="field-btn"> 
+              <div class="control"> <a href="#"><span class="fa fa-sign-in icon"> </span><span>الدخول</span></a></div>
+              <div class="control"> <a href="#"><span class="fa fa-registered icon"> </span><span>التسجيل</span></a></div>
+            </div>
+          </div>
+          <!--*** start Body Of content Page-->
+          <div class="main-topics"> 
+            <div class="heading">
+              <div class="title-wrapp"> 
+                <h4>المواضيع الرئيسية</h4>
+                <p>عن أبي هريرة رَضِيَ اللَّهُ عَنهُ أن رَسُول اللَّهِ ﷺ قال: (من سلك طريقاً يلتمس فيه علماً سهل اللَّه له طريقاً إلى الجنة) رَوَاهُ مُسلِمٌ.</p>
+              </div>
+            </div>
+            <div class="card-section mt-5">
+              <div class="wrapper-topics">
+                <div class="my-topic"> 
+                  <div class="img-topic"> <img src="./images/assets-images/3.jpg" alt="topic"></div>
+                  <div class="p-3">
+                    <div class="topic-content"> <a href="#"> 
+                        <p class="title">العقيدة</p></a></div>
+                    <div class="avatar-stock"><img src="./images/avatar1.jpg" alt=""><img src="./images/avatar2.jpg" alt=""><img src="./images/avatar1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="my-topic"> 
+                  <div class="img-topic"> <img src="./images/assets-images/4.jpg" alt="topic"></div>
+                  <div class="p-3">
+                    <div class="topic-content"> <a href="#"> 
+                        <p class="title">العبادات</p></a></div>
+                    <div class="avatar-stock"><img src="./images/avatar1.jpg" alt=""><img src="./images/avatar2.jpg" alt=""><img src="./images/avatar1.jpg" alt=""></div>
+                  </div>
+                </div>
+                <div class="my-topic"> 
+                  <div class="img-topic"> <img src="./images/assets-images/5.jpg" alt="topic"></div>
+                  <div class="p-3">
+                    <div class="topic-content"> <a href="#"> 
+                        <p class="title">المناسبات</p></a></div>
+                    <div class="avatar-stock"><img src="./images/avatar1.jpg" alt=""><img src="./images/avatar2.jpg" alt=""><img src="./images/avatar1.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="other-topics"> 
+                <div class="row"> 
+                  <div class="col-md-6"> 
+                    <div class="my-topic"> 
+                      <div class="img-topic"> <img src="./images/assets-images/5.jpg" alt="topic"></div>
+                      <div class="p-3">
+                        <div class="topic-content"> <a href="#"> 
+                            <p class="title">المناسبات</p></a></div>
+                        <div class="avatar-stock"><img src="./images/avatar1.jpg" alt=""><img src="./images/avatar2.jpg" alt=""><img src="./images/avatar1.jpg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6"> 
+                    <div class="my-topic"> 
+                      <div class="img-topic"> <img src="./images/assets-images/5.jpg" alt="topic"></div>
+                      <div class="p-3">
+                        <div class="topic-content"> <a href="#"> 
+                            <p class="title">المناسبات</p></a></div>
+                        <div class="avatar-stock"><img src="./images/avatar1.jpg" alt=""><img src="./images/avatar2.jpg" alt=""><img src="./images/avatar1.jpg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--******** Exploar lessons on website-->
+              <div class="explorer"> 
+                <div class="heading">
+                  <div class="title-wrapp"> 
+                    <h4>استكشاف دروس منصة تاء</h4>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/1.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/2.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/3.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/4.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/5.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/6.jpeg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/7.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="long-card"> 
+                      <div class="overlay"></div>
+                      <div class="long-img"> <img src="./images/explorer/8.jpg" alt="explo"></div><a class="long-card-text" href="#">
+                        <div class="icon-top"> <i class="fa fa-book"> </i></div>
+                        <div class="text-bottom">
+                          <p>تعامل المسلم مع الوباء</p>
+                        </div></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  </body>
+</html>

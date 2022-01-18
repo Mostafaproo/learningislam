@@ -1,0 +1,107 @@
+.view-wrapper {
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 80px);
+    padding: 0 0 60px;
+    margin-right: 80px;
+    margin-top: 20px;
+    transition: $transition;
+
+    .page-content-wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: $wrapper-color;
+        padding-top: 20px;
+        padding-bottom: 35px;
+        border-radius: 20px;
+
+        .page-content {
+            padding: 0 40px;
+
+            .page-title {
+                display: flex;
+                align-items: center;
+
+                .icon-wrapper {
+                    margin-left: 20px;
+                    width: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                    .icone-line {
+                        width: 20px;
+                        height: 2px;
+                        background-color: #797bf2;
+                        display: inline-block;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .second-logo {
+                    img {
+                        max-width: 100%;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-message {
+    color: #dcdcdc;
+    padding: 1.25em 1.5em;
+    border-radius: 4px;
+    background-color: #232326;
+    position: relative;
+    margin-top: 20px;
+
+    h5 {
+        color: #aaaab3 !important;
+        font-size: 1rem;
+    }
+
+    .btn-delete {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: #aaaab3 !important;
+        font-size: 12px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+}
+
+.is-pushed-full {
+    margin-right: 320px;
+    width: calc(100% - 320px);
+}
+
+.field-btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 0 0 1em 0 ; 
+
+    .control {
+        color: #dcdcdc !important;
+        text-align: center;
+        a {
+            border-radius: 2px;
+            background: #3b3b41;
+            border-color: #404046;
+            color: #aaaab3;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            font-size: .95rem;
+            line-height: 1.1;
+        }
+        .icon{
+            margin-left: 10px;
+        }
+    }
+}

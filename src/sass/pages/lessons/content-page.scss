@@ -1,0 +1,166 @@
+.main-topics {
+    .heading {
+        color: #dcdcdc;
+        text-align: center;
+
+        // color: #aaaab3 !important;
+        h4 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            color: #aaaab3 !important;
+
+            &::after {
+                content: '';
+                border-top: 1px solid #d6d6d6;
+                margin: 0 20px;
+                flex: 1 0 20px;
+            }
+
+            &::before {
+                content: '';
+                border-top: 1px solid #d6d6d6;
+                margin: 0 20px;
+                flex: 1 0 20px;
+            }
+        }
+    }
+
+    .wrapper-topics {
+        display: flex;
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+
+    .my-topic {
+        border-radius: 10px;
+        border: 1px solid #404046;
+        cursor: pointer;
+        margin-bottom: 10px;
+        width: 33.3%;
+
+        .img-topic {
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 145px;
+                object-fit: cover;
+            }
+        }
+
+        .topic-content {
+            text-align: center;
+            padding: 0 10px 10px;
+
+            p {
+                margin-top: 0px;
+                color: #aaaab3 !important;
+            }
+
+        }
+
+        .avatar-stock {
+            border-top: 1px solid #e5e5e5;
+            padding: 10px 20px 20px;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    @media(max-width:768px) {
+        .wrapper-topics {
+            flex-direction: column;
+        }
+
+        .my-topic {
+            width: 100%;
+        }
+    }
+}
+
+.other-topics {
+    max-width: 800px;
+    margin: 30px auto;
+
+    .my-topic {
+        width: 100%;
+    }
+}
+
+.explorer {
+    max-width: 800px;
+    margin: 30px auto;
+
+    .title-wrapp {
+        margin-bottom: 30px;
+        h4 {
+            color: #dcdcdc;
+            font-size: 16px !important;
+        }
+    }
+
+    .long-card {
+        position: relative;
+        margin-bottom: 20px;
+        .long-img {
+            img {
+                border-radius: 16px;
+                width: 100%;
+                min-height: 300px;
+                object-fit: cover;
+                z-index: -1;
+            }
+        }
+
+        &:hover .overlay {
+            transition: $transition;
+            opacity: 1;
+            z-index: 1;
+            cursor: pointer;
+            pointer-events: none;
+            border-radius: 16px;
+        }
+
+        .long-card-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 20px;
+            overflow: hidden;
+            z-index: 2;
+            opacity: 0;
+            .icon-top {
+                transition: $transition;
+                transform: translateY(-30px);
+            }
+            .text-bottom{
+                transform: translateY(30px);
+            }
+            &:hover{
+                
+                opacity: 1;
+            }
+            &:hover .icon-top{
+                transition: $transition;
+                transform: translateY(0);
+                
+            }
+            &:hover .text-bottom{
+                transition: $transition;
+                transform: translateY(0);
+
+            }
+
+        }
+    }
+}
