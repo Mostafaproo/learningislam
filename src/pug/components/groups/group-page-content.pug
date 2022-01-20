@@ -1,0 +1,59 @@
+.group-content 
+    .head-meta 
+        h4 المجموعات
+    
+    .add-btn 
+        a(href="#") اضافة مجموعة 
+
+    //** group
+
+    .section-group-tab
+        .row 
+            .col-md-6 
+                .group-search 
+                    input(type="search", placeholder="البحث فى المجموعات....")
+                    .icon
+                        i.fa.fa-search.icon-search
+
+            .col-md-6 
+                .nav-betwengroup 
+                    ul#pills-tab.nav.nav-pills(role='tablist')
+                        li.nav-item(role='presentation')
+                            a.bordered-right#pills-home-tab.nav-link.active(data-toggle='pill' href='#pills-all' role='tab' aria-controls='pills-all' aria-selected='true') الجميع
+                        li.nav-item(role='presentation')
+                            a.bordered-left#pills-profile-tab.nav-link(data-toggle='pill' href='#pills-spcial-group' role='tab' aria-controls='pills-spcial-group' aria-selected='false') المجموعات الخاصة
+        
+    
+        #pills-tabContent.tab-content
+            #pills-all.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-all-tab') 
+
+                .groups 
+                    .card-section 
+                        .img-group 
+                            img(src="./images/groups/group1.jpg", alt="")
+                        .card-head 
+                            .head 
+                                a(href="#") الأردن 
+                            p مجموعة طلاب منصة تاء في المملكة الأردنية الهاشمية:🏴
+
+
+            #pills-spcial-group.tab-pane.fade(role='tabpanel' aria-labelledby='pills-spcial-group-tab') لا يوجد
+
+            .section-pagination 
+
+                .links-of-page 
+                    ul 
+                        li.item 
+                            a(href="#") 1 
+                        li.item 
+                            a(href="#") 3 
+                        li.item 
+                            a(href="#") 4 
+                        li.item 
+                            a(href="#") 5 
+                .links-arrow
+                    a(href="#")
+                        i.fa.fa-arrow-right
+                    a(href="#")
+                        i.fa.fa-arrow-left
+                
