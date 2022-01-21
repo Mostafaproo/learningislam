@@ -1,0 +1,78 @@
+.chang-tiem-section {
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 6px;
+    border: 1px solid #404046;
+
+    .img-page {
+        margin: 20px auto;
+        text-align: center;
+
+        img {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 16px;
+        }
+    }
+
+    .info {
+        margin-top: 50px;
+        color: #dcdcdc !important;
+    }
+
+    // .insert-form {
+    //     margin-top: 30px;
+
+    //     form {
+    //         position: relative;
+    //         margin-top: 10px;
+    //     }
+
+    //     input {
+    //         width: 100%;
+    //         color: gray !important;
+    //         padding-left: 40px;
+    //         height: 38px;
+    //         padding-right: 38px;
+    //         background-color: #28282b;
+    //         border: 1px solid #2d2d31;
+    //         border-radius: 4px;
+
+    //         &:focus {
+    //             outline: 1px solid #404046;
+
+    //         }
+    //     }
+
+    //     .icon-search {
+    //         position: absolute;
+    //         top: 10px;
+    //         font-size: 16pt;
+    //         color: #9397ae;
+    //         bottom: 0;
+    //         right: 10px;
+    //         // width: 30px;
+    //         height: 30px;
+    //     }
+    // }
+
+    .submit-btn {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px solid #dcdcdc;
+        text-align: center;
+        button {
+            color: #dcdcdc;
+            width: 100%;
+            padding: 5px;
+            border-radius: 16px;
+            border: none;
+            background: #797bf2;
+            box-shadow: 0 14px 26px -12px rgba(121,123,242,.42),0 4px 23px 0 rgba(0,0,0,.12),0 8px 10px -5px rgba(121,123,242,.2) !important;
+            outline: none;
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+}

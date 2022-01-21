@@ -43,3 +43,15 @@ $('.item-nav  #toggle-link').click(function(e){
   $(this).parent().find('#icon-nav').toggleClass('rotate')
 })
 
+
+
+let searchInput = document.getElementById('search-input');
+let message = document.getElementById('show-result');
+
+searchInput.addEventListener('focus',function(){
+  message.style.display = 'block';
+})
+
+searchInput.addEventListener('focusout',function(){
+  message.style.display = 'none';
+})

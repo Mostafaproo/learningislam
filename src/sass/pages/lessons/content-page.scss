@@ -1,34 +1,5 @@
+
 .main-topics {
-    .heading {
-        color: #dcdcdc;
-        text-align: center;
-
-        // color: #aaaab3 !important;
-        h4 {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 10px;
-            color: #aaaab3 !important;
-
-            &::after {
-                content: '';
-                border-top: 1px solid #d6d6d6;
-                margin: 0 20px;
-                flex: 1 0 20px;
-            }
-
-            &::before {
-                content: '';
-                border-top: 1px solid #d6d6d6;
-                margin: 0 20px;
-                flex: 1 0 20px;
-            }
-        }
-    }
-
     .wrapper-topics {
         display: flex;
         max-width: 800px;
