@@ -22,7 +22,7 @@
             .page-title {
                 display: flex;
                 align-items: center;
-
+                margin-bottom: 20px;
                 .icon-wrapper {
                     margin-left: 20px;
                     width: 30px;
@@ -52,13 +52,44 @@
     }
 }
 
+.progress{
+    height: 5px !important;
+    position: relative;
+    overflow: inherit !important;
+    .progress-bar{
+        background: linear-gradient(to left,#7BD70F,#37B000);
+    }
+}
+
+.progress::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to left,#7BD70F,#37B000);
+    border-radius: 50%;
+    z-index: 33;
+    position: absolute;
+    top: -5px;
+}
+.progress::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to left,#7BD70F,#37B000);
+    border-radius: 50%;
+    z-index: 33;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
 .page-message {
     color: #dcdcdc;
     padding: 1.25em 1.5em;
     border-radius: 4px;
     background-color: #232326;
     position: relative;
-    margin-top: 20px;
+    // margin-top: 20px;
 
     h5 {
         color: #aaaab3 !important;

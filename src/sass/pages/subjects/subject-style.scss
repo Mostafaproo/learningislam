@@ -1,0 +1,112 @@
+.subject-section {
+    margin-top: 30px;
+
+    .summery-subject {
+        padding: 20px;
+
+        .content {
+            color: #aaaab3 !important;
+
+            p {
+                color: #dcdcdc;
+            }
+        }
+    }
+}
+
+.progress-section {
+    display: flex;
+    align-items: center;
+    p{
+        color: #aaaab3;
+        font-size: 12px;
+    }
+}
+.prog {
+    position: relative;
+    margin: 30px;
+    text-align: center;
+}
+
+.curnc {
+    margin-left: 100px;
+    margin-top: 1px;
+
+    span {
+        // display: inline-block;
+        color: #aaaab3;
+        z-index: 2662;
+        font-size: 12px;
+    }
+
+}
+
+.barOverflow {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden;
+    /* Comment this line to understand the trick */
+    width: 120px;
+    height: 45px;
+    /* Half circle (overflow) */
+    margin-bottom: -14px;
+    /* bring the numbers up */
+}
+
+.bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 15px solid #1e1e21;
+    /* half gray, */
+    border-bottom-color: #dcdcdc;
+    /* half azure */
+    border-right-color: #dcdcdc;
+}
+
+
+.artical-feed {
+    background: #37373B;
+    padding: 30px;
+    border-radius: 12px;
+
+    .artical-fead-item {
+        margin-top: 30px;
+
+        .featured-image {
+            text-align: center;
+            width: 100%;
+            height: 180px;
+            z-index: -1;
+            overflow: hidden;
+            border-top-right-radius: 18px;
+            border-top-left-radius: 18px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .featured-content{
+            position: relative;
+            padding: 25px;
+            border-radius: 18px;
+            background: #232326;
+            margin-top: -40px;
+            z-index: 1 !important;
+            h6{
+                margin-bottom: 10px;
+                color: #aaaab3 !important;
+            }
+            p{
+                color: #dcdcdc !important;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}
