@@ -12,6 +12,11 @@
         display: flex;
         justify-content: space-around;
     }
+    @media(max-width:568px){
+        .assets-category{
+            flex-direction: column;
+        }
+    }
 
     .category {
         margin: 20px 0 30px;
@@ -49,6 +54,7 @@
         align-items: center;
         margin-bottom: 30px;
     }
+  
 
     .avatar {
         min-width: 50px;
@@ -78,6 +84,16 @@
             font-size: .8rem;
         }
     }
+    @media(max-width:568px){
+        .go{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .title,.caption{
+            margin: 10px ;
+        }
+    }
 
     .flex-end {
         display: flex;
@@ -97,6 +113,11 @@
                     padding: 5px;
                 }
             }
+        }
+    }
+    @media(max-width:768px){
+        .flex-end{
+
         }
     }
 }
