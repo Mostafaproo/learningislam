@@ -37,6 +37,19 @@ if(iconToggle){
 
 }
 
+// Acctive navigation on mobile
+let iconMobile = document.getElementById('icon-mobile');
+let mainNav = document.getElementById('main-nav')
+
+if(iconMobile){
+  iconMobile.addEventListener("click",function(){
+    sidebar.classList.toggle('sidebar-active-mobile');
+    mainNav.classList.toggle('is-actvie-nav')
+  })
+}
+
+
+
 // Toggle Sub Menu
 // let header = document.querySelectorAll(".item-nav");
 // let submenu = document.querySelectorAll(".sub-menu");

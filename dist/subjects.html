@@ -16,104 +16,111 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body> 
-    <div class="main-nav"> 
-      <div class="nav-content"> 
-        <div class="main-brand"> <a href="./index.html"><img src="./images/logo-dark.svg" alt="logo" draggable="false"></a></div>
-        <div class="links-page"> 
-          <ul> 
-            <li><a href="./index.html"> <i class="fa fa-home fa-lg d-block text-center"> </i>الرئيسيه </a><span>تعلم</span></li>
-            <li> <a href="./Lessons-page.html"> <i class="fa fa-book fa-lg d-block text-center"> </i>الدروس </a><span>المواضيع الرئيسيه </span></li>
-            <li> <a href="./exam-page.html"> <i class="fa fa-cube fa-lg d-block text-center"> </i>الاختبارات </a><span>الاختبارات  </span></li>
-            <li> <a href="./groups.html"> <i class="fa fa-users fa-lg d-block text-center"> </i>المجموعات </a><span> المجموعات </span></li>
-            <li> <a href="./change-time.html"> <i class="fa fa-bell fa-lg d-block text-center"> </i>تحدى الوقت </a><span> تحدى الوقت </span></li>
-            <li> <a href="./leaderboard.html"> <i class="fa fa-thumbs-up fa-lg d-block text-center"> </i>لوحة التمييز </a><span> لوحه مميزه </span></li>
-            <li> <a href="./technical-support.html"> <i class="fa fa-question-circle fa-lg d-block text-center"> </i>  الدعم الفنى</a><span> اسأل الدعم</span></li>
-            <li> <a href="#"> <i class="fa fa-sign-in fa-lg d-block text-center"> </i>الدخول </a><span> دخول الموقع </span></li>
-            <li> <a href="./register.html"> <i class="fa fa-user fa-lg d-block text-center"> </i>التسجيل </a><span> تسجيل الدخول </span></li>
+    <div class="wrapper">
+      <div class="main-nav" id="main-nav">
+        <div class="nav-content"> 
+          <div class="main-brand"> <a href="./index.html"><img src="./images/logo-dark.svg" alt="logo" draggable="false"></a></div>
+          <div class="links-page"> 
+            <ul> 
+              <li><a href="./index.html"> <i class="fa fa-home fa-lg d-block text-center"> </i>الرئيسيه </a><span>تعلم</span></li>
+              <li> <a href="./Lessons-page.html"> <i class="fa fa-book fa-lg d-block text-center"> </i>الدروس </a><span>المواضيع الرئيسيه </span></li>
+              <li> <a href="./exam-page.html"> <i class="fa fa-cube fa-lg d-block text-center"> </i>الاختبارات </a><span>الاختبارات  </span></li>
+              <li> <a href="./groups.html"> <i class="fa fa-users fa-lg d-block text-center"> </i>المجموعات </a><span> المجموعات </span></li>
+              <li> <a href="./change-time.html"> <i class="fa fa-bell fa-lg d-block text-center"> </i>تحدى الوقت </a><span> تحدى الوقت </span></li>
+              <li> <a href="./leaderboard.html"> <i class="fa fa-thumbs-up fa-lg d-block text-center"> </i>لوحة التمييز </a><span> لوحه مميزه </span></li>
+              <li> <a href="./technical-support.html"> <i class="fa fa-question-circle fa-lg d-block text-center"> </i>  الدعم الفنى</a><span> اسأل الدعم</span></li>
+              <li> <a href="#"> <i class="fa fa-sign-in fa-lg d-block text-center"> </i>الدخول </a><span> دخول الموقع </span></li>
+              <li> <a href="./register.html"> <i class="fa fa-user fa-lg d-block text-center"> </i>التسجيل </a><span> تسجيل الدخول </span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-panal" id="side-bar"> 
+        <div class="sidebar-header">
+          <p>الدروس</p>
+        </div>
+        <div class="category-sidebar"> 
+          <ul class="menu"> 
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العقيده</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الشهادتان</a></li>
+                  <li class="link-sub-menu"><i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الايمان</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> العبادة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العبادات</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الطهاره</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الصلاة</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الزكاة</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الصوم</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الحج</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الموت والجنازة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">المعاملات</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> المعاملات المالية</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> المرأة المسلمة</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الاسرة المسلمة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">المناسبات</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> احكام فصل الشتاء</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> احكام الرحلات</a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الاسرة المسلمة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">القرآن الكريم</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> القرآن الكريم</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">السنة النبوية</a>
+              <div class="sub-menu">
+                <ul>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#">معرفة النبى                      </a></li>
+                  <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#">الحديث والسنة</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-    <div class="sidebar-panal" id="side-bar"> 
-      <div class="sidebar-header">
-        <p>الدروس</p>
-      </div>
-      <div class="category-sidebar"> 
-        <ul class="menu"> 
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العقيده</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الشهادتان</a></li>
-                <li class="link-sub-menu"><i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الايمان</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> العبادة</a></li>
-              </ul>
+      <div class="view-wrapper" id="view-wrapper">
+        <div class="page-content-wrapper"> 
+          <div class="page-content"> 
+            <!--*** start Page Welcom-->
+            <div class="head-mobile">
+              <div class="icon-mobile"><i class="fa fa-bars" id="icon-mobile"></i></div>
+              <div class="logo-mobile"> <a href="./index.html"> <img src="./images/logo-dark.svg" alt="dark"></a></div>
+              <div class="div"></div>
             </div>
-          </li>
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">العبادات</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الطهاره</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الصلاة</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الزكاة</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الصوم</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الحج</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الموت والجنازة</a></li>
-              </ul>
+            <div class="page-title"> 
+              <div class="icon-wrapper" id="icon-toggle"><span class="icone-line one"></span><span class="icone-line two"></span><span class="icone-line three"></span></div>
+              <div class="second-logo"><img src="./images/typo-dark.svg" draggable="false" alt="type"></div>
             </div>
-          </li>
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">المعاملات</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> المعاملات المالية</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> المرأة المسلمة</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الاسرة المسلمة</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">المناسبات</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> احكام فصل الشتاء</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> احكام الرحلات</a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> الاسرة المسلمة</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">القرآن الكريم</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#"> القرآن الكريم</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="item-nav"><i class="icon-nav fa fa-angle-left" id="icon-nav"></i><a class="link-nav" id="toggle-link" href="#">السنة النبوية</a>
-            <div class="sub-menu">
-              <ul>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#">معرفة النبى                      </a></li>
-                <li class="link-sub-menu"> <i class="fa fa-home"></i><a class="sub-link-nav" href="#">الحديث والسنة</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="view-wrapper" id="view-wrapper">
-      <div class="page-content-wrapper"> 
-        <div class="page-content"> 
-          <!--*** start Page Welcom-->
-          <div class="page-title"> 
-            <div class="icon-wrapper" id="icon-toggle"><span class="icone-line one"></span><span class="icone-line two"></span><span class="icone-line three"></span></div>
-            <div class="second-logo"><img src="./images/typo-dark.svg" draggable="false" alt="type"></div>
-          </div>
-          <div class="page-message"> 
-            <p class="btn-delete" onclick="$(this).parent().hide();"> <i class="fa fa-times"></i></p>
-            <div class="message"> 
-              <h5>لم تقم بتسجيل الدخول</h5>
-              <p>سجل الآن في منصة تاء لمتابعة تقدمك وجمع النقاط والدخول في المنافسات، بعد التسجيل ستحصل على شهادة الكترونية بالموضوعات التي تتعلمها </p>
-            </div>
-            <div class="field-btn"> 
-              <div class="control"> <a href="#"><span class="fa fa-sign-in icon"> </span><span>الدخول</span></a></div>
-              <div class="control"> <a href="#"><span class="fa fa-registered icon"> </span><span>التسجيل</span></a></div>
+            <div class="page-message"> 
+              <p class="btn-delete" onclick="$(this).parent().hide();"> <i class="fa fa-times"></i></p>
+              <div class="message"> 
+                <h5>لم تقم بتسجيل الدخول</h5>
+                <p>سجل الآن في منصة تاء لمتابعة تقدمك وجمع النقاط والدخول في المنافسات، بعد التسجيل ستحصل على شهادة الكترونية بالموضوعات التي تتعلمها </p>
+              </div>
+              <div class="field-btn"> 
+                <div class="control"> <a href="#"><span class="fa fa-sign-in icon"> </span><span>الدخول</span></a></div>
+                <div class="control"> <a href="#"><span class="fa fa-registered icon"> </span><span>التسجيل</span></a></div>
+              </div>
             </div>
           </div>
           <!--*** start Body Of content Page-->

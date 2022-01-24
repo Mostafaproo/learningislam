@@ -5,6 +5,52 @@
     width: 80px;
     background-color: $main-nav-color;
     z-index: 999;
+    transition: all .2s ease-in-out;
+}
+.head-mobile{
+    display: none;
+}
+@media(max-width:992px){
+    .main-nav{
+        margin-top: 50px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .is-actvie-nav{
+        visibility: visible;
+        opacity: 1;
+    }
+    .head-mobile{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 50px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #171718;
+        z-index: 999;
+        .icon-mobile{
+            margin: 10px;
+            i{cursor: pointer;}
+        }
+        .logo-mobile {
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .wrapper{
+        margin-top: 50px !important;
+        // position: relative;
+    }
+    .icon-wrapper{
+        display: none !important;
+    }
 }
 
 .main-brand {

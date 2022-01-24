@@ -8,7 +8,7 @@
     background-color: $sidebar-color;
     border-color: 1px solid #2f2f33 !important;
     transform: translateX(100%);
-
+    z-index: 88;
     .sidebar-header {
         height: 60px;
         padding: 0 20px;
@@ -20,8 +20,21 @@
     }
 }
 
+
 .is-active {
     transform: translateX(0%);
+}
+
+@media(max-width:992px){
+    .sidebar-panal{
+        right: 0 !important;
+        margin-top: 50px;
+    }
+    .sidebar-active-mobile{
+        right: 320px !important;
+       
+        // margin-top: 80px;
+    }
 }
 
 .category-sidebar {
