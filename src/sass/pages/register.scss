@@ -12,6 +12,12 @@
             width: 300px;
         }
     }
+    @media(max-width:992px){
+        .img-register {
+            display: none;
+        }
+        
+    }
 
     .form-text {
         padding-bottom: 30px;
@@ -72,6 +78,13 @@
             }
         }
     }
+    @media(max-width:992px){
+        .form-register{
+            height: 50vh;
+        }
+        
+    }
+    
 
     .rest {
         padding: 0 !important;

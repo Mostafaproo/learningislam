@@ -92,11 +92,15 @@ let list = document.getElementById('list');
 let iconList = document.getElementById('icon-list');
 console.log(list);
 
+if(SelectField){
 
-SelectField.addEventListener('click',function(){
-  list.classList.toggle('show')
-  iconList.classList.toggle('rotate')
-})
+  SelectField.addEventListener('click',function(){
+    list.classList.toggle('show')
+    iconList.classList.toggle('rotate')
+  })
+}
+
+
 
 for(listItem of listItems){
   listItem.onclick = function(){
