@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title منصة تاء
+        include ./public/styles/styles.pug
+    body 
+        
+
+        .register-page
+            .container-fluid 
+                .row 
+                    .col-md-8.rest 
+                        .img-register 
+                            img(src="./images/register.svg", alt="register")
+                    .col-md-4.rest 
+                        .form-register 
+                            .form-width
+                                form(action="#")
+                                    .form-text 
+                                        h2 سجّل الآن وابدأ التعلّم
+                                        p  لديك حساب في المنصة ؟
+                                            a(href="#")  تسجيل الدخول 
+                                    .form-group
+                                        i.fa.fa-user
+                                        input(type="text" placeholder="الاسم بالكامل") 
+
+                                    .form-group
+                                        i.fa.fa-envelope
+                                        input(type="email" placeholder="البريد الالكترونى ") 
+
+                                    .form-group
+                                        i.fa.fa-lock 
+                                        input(type="password" placeholder="كلمة المرور ") 
+                                
+                                    .form-group 
+                                        .list-holder 
+                                            .selected-item#selected-item
+                                                span.item-text#text اختر دولتك
+                                                span#icon-list.fa.fa-angle-down
+                                            
+                                            ul.list#list
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span مصر 
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span الامارات
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span السعوديه 
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span المغرب
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span قطر 
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span البحرين
+                                                li.list-item
+                                                    img(src="./images/group1.jpg", alt="")
+                                                    span ليبيا 
+                                    .radio-group 
+                                        label(class='radio') 
+                                            input(type="radio" checked value='ذكر' name='gender')
+                                            | غير محدد
+                                            span 
+                                        label(class='radio') 
+                                            input(type="radio" value='ذكر' name='gender')
+                                            | ذكر
+                                            span 
+                                        label(class='radio') 
+                                            input(type="radio" value='ذكر' name='gender')
+                                            | انثى
+                                            span 
+                                    .btn-submit 
+                                        button(type='submit') سجل الان
+
+
+        include ./public/scripts/scripts.pug
+
+
+
+
+
+
+
+

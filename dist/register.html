@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تاء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--** Faveicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/faveicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/faveicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/faveicon/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body> 
+    <div class="register-page">
+      <div class="container-fluid"> 
+        <div class="row"> 
+          <div class="col-md-8 rest"> 
+            <div class="img-register"> <img src="./images/register.svg" alt="register"></div>
+          </div>
+          <div class="col-md-4 rest"> 
+            <div class="form-register"> 
+              <div class="form-width">
+                <form action="#">
+                  <div class="form-text"> 
+                    <h2>سجّل الآن وابدأ التعلّم</h2>
+                    <p> لديك حساب في المنصة ؟<a href="#"> تسجيل الدخول </a></p>
+                  </div>
+                  <div class="form-group"><i class="fa fa-user"></i>
+                    <input type="text" placeholder="الاسم بالكامل">
+                  </div>
+                  <div class="form-group"><i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="البريد الالكترونى ">
+                  </div>
+                  <div class="form-group"><i class="fa fa-lock"> </i>
+                    <input type="password" placeholder="كلمة المرور ">
+                  </div>
+                  <div class="form-group"> 
+                    <div class="list-holder"> 
+                      <div class="selected-item" id="selected-item"><span class="item-text" id="text">اختر دولتك</span><span class="fa fa-angle-down" id="icon-list"></span></div>
+                      <ul class="list" id="list">
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>مصر </span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>الامارات</span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>السعوديه </span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>المغرب</span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>قطر </span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>البحرين</span></li>
+                        <li class="list-item"><img src="./images/group1.jpg" alt=""><span>ليبيا </span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="radio-group"> 
+                    <label class="radio"> 
+                      <input type="radio" checked value="ذكر" name="gender">غير محدد<span> </span>
+                    </label>
+                    <label class="radio"> 
+                      <input type="radio" value="ذكر" name="gender">ذكر<span> </span>
+                    </label>
+                    <label class="radio"> 
+                      <input type="radio" value="ذكر" name="gender">انثى<span> </span>
+                    </label>
+                  </div>
+                  <div class="btn-submit"> 
+                    <button type="submit">سجل الان</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  </body>
+</html>
