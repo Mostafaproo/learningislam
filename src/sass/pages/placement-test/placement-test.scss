@@ -7,8 +7,11 @@
     .img-test {
         text-align: center;
         margin-top: 30px;
-
+        max-width: 400px;
+        margin: auto;
+        
         img {
+            width: 100%;
             border-radius: 25px;
             border-bottom: 4px solid rgb(106 202 212 / 47%);
         }
@@ -26,7 +29,7 @@
         .item {
             border-left: 1px solid #404046;
             padding: 30px;
-            width: 33% !important;
+            width: 33%;
 
             i {
                 color: #797bf2 !important;
@@ -49,6 +52,7 @@
             }
         }
     }
+    
 
     .text-exam {
         margin-top: 20px;
@@ -72,6 +76,23 @@
                 box-shadow: 0 14px 26px -12px rgba(121, 123, 242, .42), 0 4px 23px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(121, 123, 242, .2) !important;
 
             }
+        }
+    }
+}
+
+@media(max-width:546px){
+    .info-test{
+        flex-direction: column;
+        padding: 0 !important;
+        width: 100% !important;
+        .item{
+            border: none !important;
+            border-top: 1px solid #dcdddc !important;
+            text-align: center;
+            padding-top: 20px !important;
+            width: 100% !important;
+            margin-top: 20px !important;
+    
         }
     }
 }

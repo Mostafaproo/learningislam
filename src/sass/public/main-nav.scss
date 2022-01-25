@@ -7,48 +7,58 @@
     z-index: 999;
     transition: all .2s ease-in-out;
 }
-.head-mobile{
+
+.head-mobile {
     display: none;
 }
-@media(max-width:992px){
-    .main-nav{
+
+@media(max-width:992px) {
+    .main-nav {
         margin-top: 50px;
         opacity: 0;
         visibility: hidden;
     }
-    .is-actvie-nav{
+
+    .is-actvie-nav {
         visibility: visible;
         opacity: 1;
     }
-    .head-mobile{
+
+    .head-mobile {
         display: block;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         height: 50px;
-        margin-bottom: 150px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #171718;
         z-index: 999;
-        .icon-mobile{
+
+        .icon-mobile {
             margin: 10px;
-            i{cursor: pointer;}
+
+            i {
+                cursor: pointer;
+            }
         }
+
         .logo-mobile {
-            img{
+            img {
                 width: 20px;
                 height: 20px;
             }
         }
     }
-    .wrapper{
+
+    .wrapper {
         margin-top: 50px !important;
         // position: relative;
     }
-    .icon-wrapper{
+
+    .icon-wrapper {
         display: none !important;
     }
 }
@@ -68,11 +78,12 @@
 
 
 .links-page {
-    ul{
+    ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     li {
         text-align: center;
         font-size: .65rem;
@@ -80,10 +91,13 @@
         border: 3px solid transparent;
         position: relative;
         overflow: hidden;
+
         a {
             margin-bottom: 15px;
             display: inline-block;
-            color: #a2a5b9;;
+            color: #a2a5b9;
+            ;
+
             i {
                 color: #dcdcdc;
                 transition: $transition;
@@ -116,6 +130,7 @@
             overflow: hidden;
             // z-index: 10;
             transition: $transition;
+
             // cursor: none;
             &::after {
                 content: "";
@@ -125,17 +140,19 @@
                 right: -14px;
                 border-style: solid;
                 border-color: transparent transparent transparent #797BF2;
-                
+
             }
 
         }
-        &:hover span{
+
+        &:hover span {
             visibility: visible;
             opacity: 1;
             right: 70px;
             overflow: visible;
         }
-        &:hover{
+
+        &:hover {
             overflow: visible;
         }
     }

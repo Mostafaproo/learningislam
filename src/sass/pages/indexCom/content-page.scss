@@ -116,8 +116,19 @@
         }
     }
     @media(max-width:768px){
+        .go{
+            align-items: normal;
+        }
+        .avatar{
+            min-width: 100% !important;
+            max-width: 100% !important;
+            img{
+                width: 100%;
+                height: 100px;
+            }
+        }
         .flex-end{
-
+            // flex-direction: column;
         }
     }
 }
