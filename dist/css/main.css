@@ -40,6 +40,11 @@ p {
   opacity: 0;
 }
 
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
 .card-head {
   margin-bottom: 20px;
 }
@@ -392,8 +397,18 @@ p {
 
 @media (max-width: 992px) {
   .view-wrapper {
-    width: 100%;
-    margin: 0;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .page-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .progress {
@@ -485,6 +500,22 @@ p {
   margin-left: 10px;
 }
 
+@media (max-width: 468px) {
+  .field-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .control {
+    margin-top: 20px;
+  }
+  .control a {
+    width: 100%;
+    display: inline-block;
+  }
+}
 .sidebar-panal {
   position: fixed;
   top: 0;
@@ -1118,6 +1149,9 @@ hr {
   color: #fff !important;
 }
 
+.lif-style {
+  margin-top: 40px;
+}
 .lif-style .exam-title h2 {
   color: #aaaab3;
   font-size: 26px;
@@ -1297,10 +1331,12 @@ hr {
 .chang-tiem-section .img-page {
   margin: 20px auto;
   text-align: center;
-}
-.chang-tiem-section .img-page img {
   max-width: 300px;
   max-height: 300px;
+}
+.chang-tiem-section .img-page img {
+  width: 100%;
+  height: 100%;
   border-radius: 16px;
 }
 .chang-tiem-section .info {

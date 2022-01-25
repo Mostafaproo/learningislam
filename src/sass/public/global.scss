@@ -15,6 +15,7 @@ body {
     font-family: 'Cairo', sans-serif;
     background-color: $body-color;
     color: $white;
+    // overflow-x: hidden;
 }
 
 a,
@@ -37,6 +38,10 @@ p{
     opacity: 0;
 }
 
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
 // some styles global
 .card-head {
     margin-bottom: 20px;

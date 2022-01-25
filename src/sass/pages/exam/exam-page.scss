@@ -50,6 +50,8 @@
         }
     }
 
+
+
     .main-exams {
         color: #aaaab3;
         margin-top: 30px;
@@ -95,11 +97,9 @@
                 content: '';
                 width: 30px;
                 height: 30px;
-                // background-color: red;
                 border-radius: 50%;
                 display: block;
                 border: 1px solid #3b3b41;
-                // position: absolute;
             }
 
             &::after {
@@ -169,6 +169,7 @@ hr {
 }
 
 .lif-style {
+    margin-top: 40px;
     .exam-title {
         h2 {
             color: #aaaab3;
